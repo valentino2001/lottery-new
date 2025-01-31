@@ -1236,7 +1236,7 @@
                                             className: "card-body",
                                             children: [" ", Object(g.jsxs)("center", {
                                                 children: [" ", Object(g.jsxs)("h4", {
-                                                    children: ["Winning Prize ", Object(g.jsx)("br", {}), " 50 USDT"]
+                                                    children: ["Winning Prize ", Object(g.jsx)("br", {}), " 100 USDT"]
                                                 }), Object(g.jsx)("p", {
                                                     style: {
                                                         fontSize: "8px"
@@ -1254,7 +1254,7 @@
                                             className: "card-body",
                                             children: [" ", Object(g.jsxs)("center", {
                                                 children: [" ", Object(g.jsxs)("h4", {
-                                                    children: ["Winning Prize ", Object(g.jsx)("br", {}), " 100 USDT"]
+                                                    children: ["Winning Prize ", Object(g.jsx)("br", {}), " 500 USDT"]
                                                 }), Object(g.jsx)("p", {
                                                     style: {
                                                         fontSize: "8px"
@@ -1272,7 +1272,7 @@
                                             className: "card-body",
                                             children: [" ", Object(g.jsxs)("center", {
                                                 children: [" ", Object(g.jsxs)("h4", {
-                                                    children: ["Winning Prize ", Object(g.jsx)("br", {}), " 200 USDT"]
+                                                    children: ["Winning Prize ", Object(g.jsx)("br", {}), " 5000 USDT"]
                                                 }), Object(g.jsx)("p", {
                                                     style: {
                                                         fontSize: "8px"
@@ -1291,7 +1291,7 @@
                                         className: "card",
                                         children: [Object(g.jsx)("div", {
                                             className: "card-header",
-                                            children: "Silver Lottery"
+                                            children: "Falcon 9"
                                         }), Object(g.jsxs)("div", {
                                             className: "card-body",
                                             children: [Object(g.jsx)("table", {
@@ -1367,7 +1367,7 @@
                                         className: "card",
                                         children: [Object(g.jsx)("div", {
                                             className: "card-header",
-                                            children: "Gold Lottery"
+                                            children: "Falcon Heavy"
                                         }), Object(g.jsxs)("div", {
                                             className: "card-body",
                                             children: [Object(g.jsx)("table", {
@@ -1443,7 +1443,7 @@
                                         className: "card",
                                         children: [Object(g.jsx)("div", {
                                             className: "card-header",
-                                            children: "Diamond Lottery"
+                                            children: "Starship"
                                         }), Object(g.jsxs)("div", {
                                             className: "card-body",
                                             children: [Object(g.jsx)("table", {
