@@ -1,1 +1,92 @@
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}code{font-family:source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace}body{background-image: url(../media/bg.png); background-repeat:no-repeat;background-color:#004C7A;color:#fff;font-weight:700;font-family:"Play",sans-serif}.card{color:#fff;background-color:#123754;opacity: .93;border:1px solid #123754}.cardPopcorn{height:467px}td{color:#fff}.btn{color:#032654}.btnd{margin-left:5px;margin-bottom:5px}tr{border-bottom:1px solid #333}.form-control::-webkit-input-placeholder{color:#f06203}.form-control:-ms-input-placeholder{color:#000}.form-control::placeholder{color:#000}@media only screen and (max-width:600px){.btnd{width:100%;margin-bottom:5px}.cardPopcorn{height:auto}.card,.cardPopcorn{margin-bottom:10px}}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body {
+    background-image: url(../media/bg.png);
+    background-repeat: no-repeat;
+    background-color: #004C7A;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+}
+
+/* Box-Design (angepasst) */
+.card {
+    color: #fff;
+    background-color: rgba(18, 55, 84, 0.5); /* Transparenter Hintergrund */
+    opacity: 1; /* Volle Sichtbarkeit, aber Hintergrund bleibt transparent */
+    border: 2px solid #00f0ff; /* Neon-türkiser Rand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 0 10px #00f0ff; /* Neon-Leuchteffekt um die Box */
+}
+
+.cardPopcorn {
+    height: 467px;
+}
+
+td {
+    color: #fff;
+}
+
+/* Button-Design (angepasst) */
+.btn {
+    color: #000; /* Schwarzer Text für besseren Kontrast */
+    background-color: #00f0ff; /* Neon-türkiser Hintergrund */
+    border: none; /* Kein Rand */
+    border-radius: 5px; /* Leicht abgerundete Ecken */
+    padding: 10px 20px; /* Innenabstand */
+    font-weight: bold; /* Fettschrift */
+    text-transform: uppercase; /* Großbuchstaben für einen modernen Look */
+    box-shadow: 0 0 5px #00f0ff; /* Leichte Neon-Glüheffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Weiche Hover-Animation */
+}
+
+.btn:hover {
+    background-color: #00c0cc; /* Etwas dunklerer Türkiston beim Hover */
+    box-shadow: 0 0 15px #00f0ff; /* Stärkerer Neon-Glüheffekt beim Hover */
+}
+
+.btnd {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+tr {
+    border-bottom: 1px solid #333;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #f06203;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #000;
+}
+
+.form-control::placeholder {
+    color: #000;
+}
+
+/* Responsive Anpassungen */
+@media only screen and (max-width: 600px) {
+    .btnd {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .cardPopcorn {
+        height: auto;
+    }
+    
+    .card, .cardPopcorn {
+        margin-bottom: 10px;
+    }
+}
