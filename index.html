@@ -16,10 +16,48 @@
     <title>Luminex - Lottery</title>
     <link href="static/css/2.0a9ec390.chunk.css" rel="stylesheet">
     <link href="static/css/main.00f9315c.chunk.css" rel="stylesheet">
+
+    <style>
+        /* Button-Styling */
+        .homepage-btn {
+            background-color: #00f0ff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 5px #00f0ff;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .homepage-btn:hover {
+            background-color: #00c0cc;
+            box-shadow: 0 0 15px #00f0ff;
+        }
+
+        /* Layout für Button + Überschrift */
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
 </head>
 
 <body><noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Button + Überschrift -->
+    <div class="title-container">
+        <a href="https://www.luminex.dev" target="_blank">
+            <button class="homepage-btn">Zur Homepage</button>
+        </a>
+        <h1>USDT Luminex Lottery</h1>
+    </div>
+
     <div id="root"></div>
+
     <script>
         ! function(e) {
             function t(t) {
@@ -144,7 +182,5 @@
     }
     window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-129GBRBC9G")
 </script>
-
-
 
 </html>
