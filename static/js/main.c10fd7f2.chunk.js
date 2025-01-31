@@ -1291,6 +1291,7 @@
                                         className: "card",
                                         children: [Object(g.jsx)("div", {
                                             className: "card-header",
+                                            style: { textAlign: "center" },
                                             children: "Falcon 9"
                                         }), Object(g.jsxs)("div", {
                                             className: "card-body",
@@ -1367,6 +1368,7 @@
                                         className: "card",
                                         children: [Object(g.jsx)("div", {
                                             className: "card-header",
+                                            style: { textAlign: "center" },
                                             children: "Falcon Heavy"
                                         }), Object(g.jsxs)("div", {
                                             className: "card-body",
@@ -1443,6 +1445,7 @@
                                         className: "card",
                                         children: [Object(g.jsx)("div", {
                                             className: "card-header",
+                                            style: { textAlign: "center" },
                                             children: "Starship"
                                         }), Object(g.jsxs)("div", {
                                             className: "card-body",
