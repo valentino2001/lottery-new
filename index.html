@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="logo.png" />
@@ -13,7 +15,6 @@
     <link rel="manifest" href="manifest.json" />
     <link href="static/css/2.0a9ec390.chunk.css" rel="stylesheet">
     <link href="static/css/main.00f9315c.chunk.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.5/dist/web3.min.js"></script>
 
     <style>
         /* Button-Styling */
@@ -22,14 +23,14 @@
             color: #000;
             border: none;
             border-radius: 5px;
-            padding: 5px 10px;
-            font-size: 12px;
+            padding: 5px 10px; /* Kleinere Größe */
+            font-size: 12px; /* Kleinere Schriftgröße */
             font-weight: bold;
             text-transform: uppercase;
             box-shadow: 0 0 5px #00f0ff;
             cursor: pointer;
             transition: background-color 0.3s, box-shadow 0.3s;
-            margin-left: 20px;
+            margin-left: 20px; /* Verschiebt den Button weiter nach rechts */
         }
 
         .homepage-btn:hover {
@@ -41,35 +42,7 @@
         .title-container {
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-
-        /* Gewinner-Box */
-        .winners-box {
-            border: 2px solid #00f0ff;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 20px auto;
-            background-color: #000;
-            color: #fff;
-            box-shadow: 0 0 10px #00f0ff;
-            text-align: center;
-            width: 50%;
-        }
-
-        .winners-box h3 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .winners-box ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .winners-box li {
-            padding: 5px 0;
-            text-align: center;
+            gap: 10px; /* Weniger Abstand zwischen Button und Überschrift */
         }
     </style>
 </head>
@@ -85,62 +58,129 @@
 
     <div id="root"></div>
 
-    <!-- Gewinner-Box unter dem Logo -->
-    <div class="winners-box">
-        <h3>Last 3 Winners</h3>
-        <ul id="winners-list">
-            <li>Loading...</li>
-        </ul>
-    </div>
-
     <script>
-        async function loadLastThreeWinners() {
-            if (window.ethereum) {
-                const web3 = new Web3(window.ethereum);
-                const contractAddress = "0x22f75dfc8c03a2f8823e8c48abffddb6a06bcfe0"; // Dein Smart Contract
-                const contractABI = [ /* Dein Contract ABI hier einfügen */ ];
-
-                const contract = new web3.eth.Contract(contractABI, contractAddress);
-
-                try {
-                    const events = await contract.getPastEvents("WinnerSelected", {
-                        fromBlock: "latest",
-                        toBlock: "latest"
-                    });
-
-                    const winnersList = document.getElementById("winners-list");
-                    winnersList.innerHTML = "";
-
-                    const lastThreeWinners = events.slice(-3).reverse(); // Letzte 3 Gewinner
-
-                    lastThreeWinners.forEach((event, index) => {
-                        const winnerAddress = event.returnValues.winner;
-                        const listItem = document.createElement("li");
-                        listItem.textContent = `Winner ${index + 1}: ${winnerAddress}`;
-                        winnersList.appendChild(listItem);
-                    });
-                } catch (error) {
-                    console.error("Error fetching winners:", error);
-                }
-            } else {
-                console.error("No Ethereum provider found. Install MetaMask.");
+        ! function(e) {
+            function t(t) {
+                for (var n, i, a = t[0], c = t[1], l = t[2], s = 0, p = []; s < a.length; s++) i = a[s], Object.prototype.hasOwnProperty.call(o, i) && o[i] && p.push(o[i][0]), o[i] = 0;
+                for (n in c) Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]);
+                for (f && f(t); p.length;) p.shift()();
+                return u.push.apply(u, l || []), r()
             }
-        }
 
-        window.addEventListener("load", loadLastThreeWinners);
+            function r() {
+                for (var e, t = 0; t < u.length; t++) {
+                    for (var r = u[t], n = !0, a = 1; a < r.length; a++) {
+                        var c = r[a];
+                        0 !== o[c] && (n = !1)
+                    }
+                    n && (u.splice(t--, 1), e = i(i.s = r[0]))
+                }
+                return e
+            }
+            var n = {},
+                o = {
+                    1: 0
+                },
+                u = [];
+
+            function i(t) {
+                if (n[t]) return n[t].exports;
+                var r = n[t] = {
+                    i: t,
+                    l: !1,
+                    exports: {}
+                };
+                return e[t].call(r.exports, r, r.exports, i), r.l = !0, r.exports
+            }
+            i.e = function(e) {
+                var t = [],
+                    r = o[e];
+                if (0 !== r)
+                    if (r) t.push(r[2]);
+                    else {
+                        var n = new Promise((function(t, n) {
+                            r = o[e] = [t, n]
+                        }));
+                        t.push(r[2] = n);
+                        var u, a = document.createElement("script");
+                        a.charset = "utf-8", a.timeout = 120, i.nc && a.setAttribute("nonce", i.nc), a.src = function(e) {
+                            return i.p + "static/js/" + ({} [e] || e) + "." + {
+                                3: "7489cab3"
+                            } [e] + ".chunk.js"
+                        }(e);
+                        var c = new Error;
+                        u = function(t) {
+                            a.onerror = a.onload = null, clearTimeout(l);
+                            var r = o[e];
+                            if (0 !== r) {
+                                if (r) {
+                                    var n = t && ("load" === t.type ? "missing" : t.type),
+                                        u = t && t.target && t.target.src;
+                                    c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + u + ")", c.name = "ChunkLoadError", c.type = n, c.request = u, r[1](c)
+                                }
+                                o[e] = void 0
+                            }
+                        };
+                        var l = setTimeout((function() {
+                            u({
+                                type: "timeout",
+                                target: a
+                            })
+                        }), 12e4);
+                        a.onerror = a.onload = u, document.head.appendChild(a)
+                    } return Promise.all(t)
+            }, i.m = e, i.c = n, i.d = function(e, t, r) {
+                i.o(e, t) || Object.defineProperty(e, t, {
+                    enumerable: !0,
+                    get: r
+                })
+            }, i.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, i.t = function(e, t) {
+                if (1 & t && (e = i(e)), 8 & t) return e;
+                if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                var r = Object.create(null);
+                if (i.r(r), Object.defineProperty(r, "default", {
+                        enumerable: !0,
+                        value: e
+                    }), 2 & t && "string" != typeof e)
+                    for (var n in e) i.d(r, n, function(t) {
+                        return e[t]
+                    }.bind(null, n));
+                return r
+            }, i.n = function(e) {
+                var t = e && e.__esModule ? function() {
+                    return e.default
+                } : function() {
+                    return e
+                };
+                return i.d(t, "a", t), t
+            }, i.o = function(e, t) {
+                return Object.prototype.hasOwnProperty.call(e, t)
+            }, i.p = "logo.png", i.oe = function(e) {
+                throw console.error(e), e
+            };
+            var a = this.webpackJsonpdinolottery = this.webpackJsonpdinolottery || [],
+                c = a.push.bind(a);
+            a.push = t, a = a.slice();
+            for (var l = 0; l < a.length; l++) t(a[l]);
+            var f = c;
+            r()
+        }([])
     </script>
-
     <script src="static/js/2.0c9bab0e.chunk.js"></script>
     <script src="static/js/main.c10fd7f2.chunk.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-129GBRBC9G"></script>
-    <script>
-        function gtag() {
-            dataLayer.push(arguments)
-        }
-        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-129GBRBC9G")
-    </script>
-
 </body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-129GBRBC9G"></script>
+<script>
+    function gtag() {
+        dataLayer.push(arguments)
+    }
+    window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-129GBRBC9G")
+</script>
 
 </html>
