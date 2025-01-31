@@ -1196,7 +1196,7 @@
                                 children: [Object(g.jsxs)("div", {
                                     className: "col-sm-9",
                                     children: [Object(g.jsx)("h1", {
-                                        children: "USDT Lottery"
+                                        children: "USDT Luminex Lottery"
                                     }), Object(g.jsx)("p", {
                                         children: "Instant Win, Instant Announcement, Immediate Transfer"
                                     })]
