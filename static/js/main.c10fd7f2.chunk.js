@@ -1241,7 +1241,7 @@
                                                     style: {
                                                         fontSize: "8px"
                                                     },
-                                                    children: "30% Winner tax goes to Dev & Buyback Wallet"
+                                                    children: "30% Winner tax goes to developement and marketing"
                                                 })]
                                             })]
                                         }), " "]
@@ -1259,7 +1259,7 @@
                                                     style: {
                                                         fontSize: "8px"
                                                     },
-                                                    children: "30% Winner tax goes to Dev & Buyback Wallet"
+                                                    children: "30% Winner tax goes to development and marketing"
                                                 })]
                                             })]
                                         }), " "]
@@ -1277,7 +1277,7 @@
                                                     style: {
                                                         fontSize: "8px"
                                                     },
-                                                    children: "30% Winner tax goes to Dev & Buyback Wallet"
+                                                    children: "30% Winner tax goes to development and marketing"
                                                 })]
                                             })]
                                         }), " "]
