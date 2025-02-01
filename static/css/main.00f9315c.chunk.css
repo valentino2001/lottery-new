@@ -20,31 +20,51 @@ body {
 
 /* Box-Design (angepasst) */
 .card {
-    color: #fff;
-    background-color: rgba(18, 55, 84, 0.2);
+    color: #fff; /* Weiße Schrift in den Boxen */
+    background-color: rgba(18, 55, 84, 0.2); /* Noch mehr Transparenz */
     opacity: 1;
-    border: 2px solid #00ffff;
+    border: 2px solid #00ffff; /* Hellere Neon-Türkis-Farbe */
     border-radius: 10px;
-    box-shadow: 0 0 15px #00ffff;
+    box-shadow: 0 0 15px #00ffff; /* Stärkerer Neon-Leuchteffekt */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover-Effekt für Boxen */
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #00ffff;
+    transform: scale(1.05); /* Leichtes Vergrößern */
+    box-shadow: 0 0 25px #00ffff; /* Stärkerer Neon-Leuchteffekt */
 }
 
 /* Tabellen-Schrift innerhalb der Boxen */
 .card td {
-    color: #fff !important;
+    color: #fff !important; /* Weiß */
 }
 
-/* ENABLE Button Anpassung */
-.enable-btn {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #00ffff;
+/* Button-Design (angepasst) */
+.btn {
+    color: #000;
+    background-color: #00ffff; /* Hellere Neon-Türkis-Farbe */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px #00ffff;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s ease;
+}
+
+/* Hover-Effekt für Buttons */
+.btn:hover {
+    background-color: #00c0cc;
+    box-shadow: 0 0 15px #00ffff;
+    transform: scale(1.1);
+}
+
+/* CONNECT Button Anpassung */
+.connect-btn {
+    background-color: #00ffff !important; /* NEON-TÜRKIS */
+    color: #000 !important;
+    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
@@ -52,14 +72,14 @@ body {
     text-transform: uppercase;
     box-shadow: 0 0 10px #00ffff;
     cursor: pointer;
-    transition: box-shadow 0.3s, transform 0.3s ease, background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s ease;
 }
 
-/* Hover-Effekt für ENABLE Button */
-.enable-btn:hover {
+/* Hover-Effekt für CONNECT Button */
+.connect-btn:hover {
+    background-color: #00c0cc !important;
     box-shadow: 0 0 20px #00ffff;
     transform: scale(1.1);
-    background-color: rgba(0, 255, 255, 0.2);
 }
 
 .btnd {
