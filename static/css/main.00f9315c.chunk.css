@@ -62,8 +62,8 @@ body {
 
 /* CONNECT Button Anpassung */
 .connect-btn {
-    background-color: #00ffff; /* Neon-Türkis */
-    color: #000;
+    background-color: #00ffff !important; /* NEON-TÜRKIS */
+    color: #000 !important;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -77,7 +77,7 @@ body {
 
 /* Hover-Effekt für CONNECT Button */
 .connect-btn:hover {
-    background-color: #00c0cc;
+    background-color: #00c0cc !important;
     box-shadow: 0 0 20px #00ffff;
     transform: scale(1.1);
 }
