@@ -1546,9 +1546,9 @@
                                     },
                                     children: [Object(g.jsx)("i", {
                                         class: "fa fa-twitter"
-                                    }), " Twitter "]
+                                    }), " Check Winners "]
                                 }), " || ", Object(g.jsxs)("a", {
-                                    href: "https://t.me/luminex_official",
+                                    href: "https://bscscan.com/address/0x22f75dfc8c03a2f8823e8c48abffddb6a06bcfe0",
                                     style: {
                                         color: "#ffc107",
                                         textDecoration: "none"
