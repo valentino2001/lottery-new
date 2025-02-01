@@ -1539,7 +1539,7 @@
                         }), Object(g.jsx)("br", {}), Object(g.jsx)("center", {
                             children: Object(g.jsxs)("h5", {
                                 children: [" ", Object(g.jsxs)("a", {
-                                    href: "https://x.com/Luminex_0xV2",
+                                    href: "https://bscscan.com/address/0x22f75dfc8c03a2f8823e8c48abffddb6a06bcfe0",
                                     style: {
                                         color: "#ffc107",
                                         textDecoration: "none"
@@ -1548,7 +1548,7 @@
                                         class: "fa fa-twitter"
                                     }), " Check Winners "]
                                 }), " || ", Object(g.jsxs)("a", {
-                                    href: "https://bscscan.com/address/0x22f75dfc8c03a2f8823e8c48abffddb6a06bcfe0",
+                                    href: "https://t.me/luminex_official",
                                     style: {
                                         color: "#ffc107",
                                         textDecoration: "none"
