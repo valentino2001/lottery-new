@@ -20,8 +20,8 @@ body {
 
 /* Box-Design (angepasst) */
 .card {
-    color: #fff;
-    background-color: rgba(18, 55, 84, 0.3); /* Mehr Transparenz */
+    color: #fff; /* Weiße Schrift in den Boxen */
+    background-color: rgba(18, 55, 84, 0.2); /* Noch mehr Transparenz */
     opacity: 1;
     border: 2px solid #00ffff; /* Hellere Neon-Türkis-Farbe */
     border-radius: 10px;
@@ -33,6 +33,11 @@ body {
 .card:hover {
     transform: scale(1.05); /* Leichtes Vergrößern */
     box-shadow: 0 0 25px #00ffff; /* Stärkerer Neon-Leuchteffekt */
+}
+
+/* Tabellen-Schrift innerhalb der Boxen */
+.card td {
+    color: #fff !important; /* Weiß */
 }
 
 /* Button-Design (angepasst) */
