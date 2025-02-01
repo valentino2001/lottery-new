@@ -1548,14 +1548,14 @@
                                         class: "fa fa-twitter"
                                     }), " Check Winners "]
                                 }), " || ", Object(g.jsxs)("a", {
-                                    href: "https://t.me/luminex_official",
+                                    href: "https://www.luminex.dev",
                                     style: {
                                         color: "#ffc107",
                                         textDecoration: "none"
                                     },
                                     children: [Object(g.jsx)("i", {
                                         class: "fa fa-telegram"
-                                    }), " Telegram "]
+                                    }), " Back "]
                                 
                                 }), "|| ", Object(g.jsxs)("a", {
                                     href: "https://bscscan.com/address/0x22f75dfc8c03a2f8823e8c48abffddb6a06bcfe0#code",
