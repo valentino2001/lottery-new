@@ -21,37 +21,60 @@ body {
 /* Box-Design (angepasst) */
 .card {
     color: #fff;
-    background-color: rgba(18, 55, 84, 0.5); /* Transparenter Hintergrund */
-    opacity: 1; /* Volle Sichtbarkeit, aber Hintergrund bleibt transparent */
-    border: 2px solid #00f0ff; /* Neon-türkiser Rand */
-    border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 0 10px #00f0ff; /* Neon-Leuchteffekt um die Box */
+    background-color: rgba(18, 55, 84, 0.3); /* Mehr Transparenz */
+    opacity: 1;
+    border: 2px solid #00ffff; /* Hellere Neon-Türkis-Farbe */
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ffff; /* Stärkerer Neon-Leuchteffekt */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cardPopcorn {
-    height: 467px;
-}
-
-td {
-    color: #fff;
+/* Hover-Effekt für Boxen */
+.card:hover {
+    transform: scale(1.05); /* Leichtes Vergrößern */
+    box-shadow: 0 0 25px #00ffff; /* Stärkerer Neon-Leuchteffekt */
 }
 
 /* Button-Design (angepasst) */
 .btn {
-    color: #000; /* Schwarzer Text für besseren Kontrast */
-    background-color: #00f0ff; /* Neon-türkiser Hintergrund */
-    border: none; /* Kein Rand */
-    border-radius: 5px; /* Leicht abgerundete Ecken */
-    padding: 10px 20px; /* Innenabstand */
-    font-weight: bold; /* Fettschrift */
-    text-transform: uppercase; /* Großbuchstaben für einen modernen Look */
-    box-shadow: 0 0 5px #00f0ff; /* Leichte Neon-Glüheffekt */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Weiche Hover-Animation */
+    color: #000;
+    background-color: #00ffff; /* Hellere Neon-Türkis-Farbe */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px #00ffff;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s ease;
 }
 
+/* Hover-Effekt für Buttons */
 .btn:hover {
-    background-color: #00c0cc; /* Etwas dunklerer Türkiston beim Hover */
-    box-shadow: 0 0 15px #00f0ff; /* Stärkerer Neon-Glüheffekt beim Hover */
+    background-color: #00c0cc;
+    box-shadow: 0 0 15px #00ffff;
+    transform: scale(1.1);
+}
+
+/* CONNECT Button Anpassung */
+.connect-btn {
+    background-color: #00ffff; /* Neon-Türkis */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #00ffff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s ease;
+}
+
+/* Hover-Effekt für CONNECT Button */
+.connect-btn:hover {
+    background-color: #00c0cc;
+    box-shadow: 0 0 20px #00ffff;
+    transform: scale(1.1);
 }
 
 .btnd {
