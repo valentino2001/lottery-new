@@ -1241,7 +1241,7 @@
                                                     style: {
                                                         fontSize: "8px"
                                                     },
-                                                    children: "30% Winner tax goes to development and marketing"
+                                                    children: "30% Winner tax goes to development, marketing and buybacks."
                                                 })]
                                             })]
                                         }), " "]
@@ -1259,7 +1259,7 @@
                                                     style: {
                                                         fontSize: "8px"
                                                     },
-                                                    children: "30% Winner tax goes to development and marketing"
+                                                    children: "30% Winner tax goes to development, marketing and buybacks."
                                                 })]
                                             })]
                                         }), " "]
@@ -1277,7 +1277,7 @@
                                                     style: {
                                                         fontSize: "8px"
                                                     },
-                                                    children: "30% Winner tax goes to development and marketing"
+                                                    children: "30% Winner tax goes to development, marketing and buybacks."
                                                 })]
                                             })]
                                         }), " "]
@@ -1534,7 +1534,7 @@
                             })]
                         }), Object(g.jsx)("br", {}), Object(g.jsxs)("center", {
                             children: [" ", Object(g.jsx)("h4", {
-                                children: "To check Winners Please Reffer To Lottery Smart Contract "
+                                children: "To check Winners Please click the Button down below "
                             })]
                         }), Object(g.jsx)("br", {}), Object(g.jsx)("center", {
                             children: Object(g.jsxs)("h5", {
