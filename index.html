@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="logo.png" />
@@ -17,55 +15,39 @@
     <link href="static/css/main.00f9315c.chunk.css" rel="stylesheet">
 
     <style>
-        /* Button-Styling */
-       /* Button-Styling */
-.homepage-btn {
-    background-color: #00f0ff;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px; /* Kleinere Größe */
-    font-size: 12px; /* Kleinere Schriftgröße */
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 0 5px #00f0ff;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-
-    /* Änderen dieser Zeile, um den Button nach rechts neben CONNECT zu setzen */
-    margin-left: 10px; /* Kleineren Abstand zum CONNECT-Button */
-}
-
-.button-container {
-    display: flex;
-    gap: 10px; /* Abstand zwischen BACK & CONNECT */
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-
-        .homepage-btn:hover {
-            background-color: #00c0cc;
-            box-shadow: 0 0 15px #00f0ff;
+        .button-container {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
 
-        /* Layout für Button + Überschrift */
-        .title-container {
-            display: flex;
-            align-items: center;
-            gap: 10px; /* Weniger Abstand zwischen Button und Überschrift */
+        .connect-btn {
+            background-color: #00f0ff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 5px #00f0ff;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .connect-btn:hover {
+            background-color: #00c0cc;
+            box-shadow: 0 0 15px #00f0ff;
         }
     </style>
 </head>
 
 <body><noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <!-- Button + Überschrift -->
-    <div class="title-container">
-        <a href="https://www.luminex.dev" target="_blank">
-            <button class="homepage-btn">BACK</button>
-        </a>
+    <div class="button-container">
+        <button class="connect-btn">CONNECT</button>
     </div>
 
     <div id="root"></div>
@@ -146,53 +128,10 @@
                     enumerable: !0,
                     get: r
                 })
-            }, i.r = function(e) {
-                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
-                    value: "Module"
-                }), Object.defineProperty(e, "__esModule", {
-                    value: !0
-                })
-            }, i.t = function(e, t) {
-                if (1 & t && (e = i(e)), 8 & t) return e;
-                if (4 & t && "object" == typeof e && e && e.__esModule) return e;
-                var r = Object.create(null);
-                if (i.r(r), Object.defineProperty(r, "default", {
-                        enumerable: !0,
-                        value: e
-                    }), 2 & t && "string" != typeof e)
-                    for (var n in e) i.d(r, n, function(t) {
-                        return e[t]
-                    }.bind(null, n));
-                return r
-            }, i.n = function(e) {
-                var t = e && e.__esModule ? function() {
-                    return e.default
-                } : function() {
-                    return e
-                };
-                return i.d(t, "a", t), t
-            }, i.o = function(e, t) {
-                return Object.prototype.hasOwnProperty.call(e, t)
-            }, i.p = "logo.png", i.oe = function(e) {
-                throw console.error(e), e
-            };
-            var a = this.webpackJsonpdinolottery = this.webpackJsonpdinolottery || [],
-                c = a.push.bind(a);
-            a.push = t, a = a.slice();
-            for (var l = 0; l < a.length; l++) t(a[l]);
-            var f = c;
-            r()
+            }
         }([])
     </script>
     <script src="static/js/2.0c9bab0e.chunk.js"></script>
     <script src="static/js/main.c10fd7f2.chunk.js"></script>
 </body>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-129GBRBC9G"></script>
-<script>
-    function gtag() {
-        dataLayer.push(arguments)
-    }
-    window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-129GBRBC9G")
-</script>
-
 </html>
