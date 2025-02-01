@@ -1541,7 +1541,7 @@
                                 children: [" ", Object(g.jsxs)("a", {
                                     href: "https://bscscan.com/address/0x22f75dfc8c03a2f8823e8c48abffddb6a06bcfe0",
                                     style: {
-                                        color: "#ffc107",
+                                        color: "#FFFFFF",
                                         textDecoration: "none"
                                     },
                                     children: [Object(g.jsx)("i", {
@@ -1550,7 +1550,7 @@
                                 }), " || ", Object(g.jsxs)("a", {
                                     href: "https://www.luminex.dev",
                                     style: {
-                                        color: "#ffc107",
+                                        color: "#FFFFFF",
                                         textDecoration: "none"
                                     },
                                     children: [Object(g.jsx)("i", {
@@ -1560,7 +1560,7 @@
                                 }), "|| ", Object(g.jsxs)("a", {
                                     href: "https://bscscan.com/address/0x22f75dfc8c03a2f8823e8c48abffddb6a06bcfe0#code",
                                     style: {
-                                        color: "#ffc107",
+                                        color: "#FFFFFF",
                                         textDecoration: "none"
                                     },
                                     children: [Object(g.jsx)("i", {
