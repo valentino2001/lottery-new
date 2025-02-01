@@ -40,48 +40,6 @@ body {
     color: #fff !important;
 }
 
-/* Button-Design (angepasst) */
-.btn {
-    color: #000;
-    background-color: #00ffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 0 5px #00ffff;
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s ease;
-}
-
-/* Hover-Effekt für Buttons */
-.btn:hover {
-    background-color: #00c0cc;
-    box-shadow: 0 0 15px #00ffff;
-    transform: scale(1.1);
-}
-
-/* CONNECT Button Anpassung */
-.connect-btn {
-    background-color: #00ffff !important;
-    color: #000 !important;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 0 10px #00ffff;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s ease;
-}
-
-/* Hover-Effekt für CONNECT Button */
-.connect-btn:hover {
-    background-color: #00c0cc !important;
-    box-shadow: 0 0 20px #00ffff;
-    transform: scale(1.1);
-}
-
 /* ENABLE Button Anpassung */
 .enable-btn {
     background-color: transparent;
@@ -94,13 +52,14 @@ body {
     text-transform: uppercase;
     box-shadow: 0 0 10px #00ffff;
     cursor: pointer;
-    transition: box-shadow 0.3s, transform 0.3s ease;
+    transition: box-shadow 0.3s, transform 0.3s ease, background-color 0.3s;
 }
 
 /* Hover-Effekt für ENABLE Button */
 .enable-btn:hover {
     box-shadow: 0 0 20px #00ffff;
     transform: scale(1.1);
+    background-color: rgba(0, 255, 255, 0.2);
 }
 
 .btnd {
