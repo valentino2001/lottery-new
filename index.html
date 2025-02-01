@@ -18,20 +18,33 @@
 
     <style>
         /* Button-Styling */
-        .homepage-btn {
-            background-color: #00f0ff;
-            color: #000;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px; /* Kleinere Größe */
-            font-size: 12px; /* Kleinere Schriftgröße */
-            font-weight: bold;
-            text-transform: uppercase;
-            box-shadow: 0 0 5px #00f0ff;
-            cursor: pointer;
-            transition: background-color 0.3s, box-shadow 0.3s;
-            margin-left: 20px; /* Verschiebt den Button weiter nach rechts */
-        }
+       /* Button-Styling */
+.homepage-btn {
+    background-color: #00f0ff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Kleinere Größe */
+    font-size: 12px; /* Kleinere Schriftgröße */
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px #00f0ff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+    /* Ändere diese Zeile, um den Button nach rechts neben CONNECT zu setzen */
+    margin-left: 10px; /* Kleineren Abstand zum CONNECT-Button */
+}
+
+/* Falls du willst, dass der BACK-Button direkt neben dem CONNECT-Button ist */
+.button-container {
+    display: flex;
+    gap: 10px; /* Abstand zwischen BACK & CONNECT */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 
         .homepage-btn:hover {
             background-color: #00c0cc;
