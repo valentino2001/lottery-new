@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="logo.png" />
@@ -17,20 +15,28 @@
     <link href="static/css/main.00f9315c.chunk.css" rel="stylesheet">
 
     <style>
-        /* Button-Styling */
+        /* Button-Container für BACK und CONNECT */
+        .button-container {
+            display: flex; /* Buttons nebeneinander */
+            gap: 10px; /* Abstand zwischen Buttons */
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* BACK Button */
         .homepage-btn {
             background-color: #00f0ff;
             color: #000;
             border: none;
             border-radius: 5px;
-            padding: 5px 10px; /* Kleinere Größe */
-            font-size: 12px; /* Kleinere Schriftgröße */
+            padding: 5px 15px;
+            font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
             box-shadow: 0 0 5px #00f0ff;
             cursor: pointer;
             transition: background-color 0.3s, box-shadow 0.3s;
-            margin-left: 20px; /* Verschiebt den Button weiter nach rechts */
         }
 
         .homepage-btn:hover {
@@ -38,22 +44,37 @@
             box-shadow: 0 0 15px #00f0ff;
         }
 
-        /* Layout für Button + Überschrift */
-        .title-container {
-            display: flex;
-            align-items: center;
-            gap: 10px; /* Weniger Abstand zwischen Button und Überschrift */
+        /* CONNECT Button */
+        .connect-btn {
+            background-color: #00f0ff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 5px #00f0ff;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .connect-btn:hover {
+            background-color: #00c0cc;
+            box-shadow: 0 0 15px #00f0ff;
         }
     </style>
 </head>
 
-<body><noscript>You need to enable JavaScript to run this app.</noscript>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <!-- Button + Überschrift -->
-    <div class="title-container">
+    <!-- Buttons oben rechts -->
+    <div class="button-container">
         <a href="https://www.luminex.dev" target="_blank">
             <button class="homepage-btn">BACK</button>
         </a>
+        <button class="connect-btn">CONNECT</button>
     </div>
 
     <div id="root"></div>
@@ -170,17 +191,8 @@
             for (var l = 0; l < a.length; l++) t(a[l]);
             var f = c;
             r()
-        }([])
+        }([]);
     </script>
-    <script src="static/js/2.0c9bab0e.chunk.js"></script>
-    <script src="static/js/main.c10fd7f2.chunk.js"></script>
 </body>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-129GBRBC9G"></script>
-<script>
-    function gtag() {
-        dataLayer.push(arguments)
-    }
-    window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-129GBRBC9G")
-</script>
 
 </html>
